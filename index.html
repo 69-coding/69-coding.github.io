@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Responsive Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f6f6f6;
+        }
+
+        .container {
+            width: 75%;
+            margin: auto;
+            background-color: white;
+            padding: 10px;
+        }
+
+        header {
+            padding: 10px 0;
+            background-color: #4CAF50;
+        }
+
+        header h1 {
+            text-align: center;
+            color: white;
+        }
+
+        article {
+            padding: 10px 0;
+        }
+
+        nav {
+            float: left;
+            max-width: 160px;
+            margin: 0;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul a {
+            text-decoration: none;
+        }
+
+        article, aside {
+            float: left;
+            padding: 0 10px;
+            width: 70%;
+        }
+
+        aside {
+            max-width: 660px;
+            padding: 1em;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                width: 90%;
+            }
+
+            nav {
+                max-width: none;
+            }
+
+            article, aside {
+                float: none;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Responsive Website</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Welcome to my Responsive Website!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices magna ex, sit amet ornare ipsum iaculis quis. Nulla maximus in sem sit amet commodo. Curabitur pretium lectus quam, et pellentesque neque condimentum ac. Integer sed felisSed ultrices magna ex, sit amet ornare ipsum iaculis quis. Nulla maximus in sem sit amet commodo. Curabitur pretium lectus quam, et pellentesque neque condimentum ac. Integer sed felis.</p>
+        </article>
+
+        <aside>
+            <h2>Book an Appointment</h2>
+            <form>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="text" placeholder="Phone Number" />
+                <input type="submit" value="Submit" />
+            </form>
+        </aside>
+    </div>
+</body>
+</html>
