@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Play YouTube Videos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    /* Make the page adaptable to different screen sizes */
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Play a YouTube Video</h1>
+    <form action="index.html" method="get">
+      <input type="text" name="video" placeholder="Type in the Video you want to Play">
+      <input type="submit" value="Submit Query">
+    </form>
+    <!-- We will use YouTube's iframe API to handle the video display -->
+    <iframe id="video-display" width="640" height="360" 
+      src="https://www.youtube.com/embed/?listType=search&list=<?php print $_GET['video'];?>" 
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </body>
+</html>
